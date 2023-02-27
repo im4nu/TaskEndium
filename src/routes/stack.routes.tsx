@@ -1,9 +1,9 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { Auth } from '../screens/auth';
 
 const { Screen, Navigator } = createNativeStackNavigator();
 
 // Screen imporations from src/screens
-import { Auth } from '../screens/auth';
 import { TabRoutes } from './tab.routes';
 
 export function StackRoutes() {
