@@ -1,8 +1,8 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Feather } from '@expo/vector-icons';
-import { Feed } from '../screens/feed';
 
 //Screens imported by screens folder
+import { Feed } from '../screens/feed';
 import { Home } from '../screens/home';
 import { Settings } from '../screens/settings';
 
