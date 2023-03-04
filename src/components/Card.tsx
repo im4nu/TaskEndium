@@ -1,6 +1,5 @@
 import React from "react";
 import { Container,Text} from "native-base";
-import { InterfaceCardProps } from "native-base/lib/typescript/components/composites/Card/types";
 
 interface CardProps{
   title:string;
