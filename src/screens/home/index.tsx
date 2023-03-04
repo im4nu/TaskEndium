@@ -1,4 +1,5 @@
-import { View, Text, VStack, Button, Toast } from 'native-base';
+import { Text, VStack } from 'native-base';
+import {MainButton} from '../../components/Button'
 
 export function Home() {
   return (
@@ -10,29 +11,10 @@ export function Home() {
       alignItems={'center'}
       px={8}
     >
-      <Text>Bem vindo a Home</Text>
+      <Text color={'black'}>Bem vindo a Home</Text>
+      <MainButton title='Botão do Eduardo' />
 
-      <View 
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
-      }}>
-
-        <Button  
-        variant="subtle" 
-        justifyContent={'center'}
-        textAlign={'center'} 
-        key={50} 
-        size={130}
-        colorScheme="secondary" 
-        onPress={() => Toast.show({
-          description: "Pop-up do Eduardo"
-        })}> 
-        Botão do Eduardo
-        </Button>
-      </View>
-
+      <MainButton title='Botão do Emmanuel' />
     </VStack>
   );
 }
