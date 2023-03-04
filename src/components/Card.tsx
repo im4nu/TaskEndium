@@ -10,7 +10,7 @@ export function MainCard ({title}:CardProps ){
   return(
 
  <Container
- backgroundColor={'blue.500'}
+ backgroundColor={'blue.400'}
  padding={'5'} 
  borderColor={'black'}
  borderRadius={'full'}
