@@ -1,4 +1,6 @@
 import { Text, VStack } from 'native-base';
+import { ClickButton } from '../../components/clickButton';
+<div className=""></div>
 
 export function Feed() {
   return (
@@ -10,6 +12,7 @@ export function Feed() {
       px={8}
     >
       <Text>Bem vindo a Home</Text>
+      <ClickButton/>
     </VStack>
   );
 }
