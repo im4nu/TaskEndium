@@ -11,7 +11,7 @@ export function Auth() {
       textAlign={'center'}
       px={8}
     >
-      <Text>Bem vindo ao TaskEndium</Text>
+      <Text color={'black'}>Bem vindo ao TaskEndium</Text>
       <Button onPress={() => navigation.navigate('Tabs')}>
         <Text>Login</Text>
       </Button>
