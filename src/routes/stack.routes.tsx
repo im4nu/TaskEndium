@@ -8,13 +8,9 @@ import { Auth } from '../screens/auth';
 
 export function StackRoutes() {
   return (
-    <Navigator>
+    <Navigator screenOptions={{ headerShown: false}}>
       <Screen name="Auth" component={Auth} />
-      <Screen options={{
-        headerShown: false
-      }} 
-      name="Tabs"
-      component={TabRoutes} />
+      <Screen name="Tabs" component={TabRoutes} />
     </Navigator>
   );
 }
