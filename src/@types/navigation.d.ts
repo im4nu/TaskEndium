@@ -6,6 +6,9 @@ export declare global{
             Home: undefined;
             Settings: undefined;
             Feed: undefined;
+            Unicas: undefined,
+            Habitos: undefined,
+            Metas: undefined,
         }
     }
 }
