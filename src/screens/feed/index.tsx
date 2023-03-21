@@ -11,7 +11,7 @@ export function Feed() {
     style={{ flex:1 }}>
       <VStack
       flex={1}
-      bg={'#22222275'}>  
+      bg={'#22222295'}>  
         <VStack
           flex={1}
           justifyContent={'center'}
