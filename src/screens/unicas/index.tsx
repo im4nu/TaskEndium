@@ -1,6 +1,6 @@
 import { Text, View, VStack } from 'native-base';
 import { ImageBackground, requireNativeComponent } from 'react-native';
-import { background } from '../../utils/images';
+import { background } from '../../utils/background';
 
 export function Unicas() {
   return (

@@ -1,7 +1,7 @@
 import { Heading, HStack, ScrollView, Stack, Text, VStack } from 'native-base';
 import { ImageBackground } from 'react-native';
 import { TaskCard } from '../../components/TasksCards';
-import { background } from '../../utils/images';
+import { background } from '../../utils/background';
 
 export function Home() {
   const unicasData = [

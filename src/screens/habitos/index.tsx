@@ -1,6 +1,6 @@
 import { Text, VStack, Button, View } from 'native-base';
 import { ImageBackground } from 'react-native';
-import { background } from '../../utils/images';
+import { background } from '../../utils/background';
 
 export function Habitos() {
   return (
