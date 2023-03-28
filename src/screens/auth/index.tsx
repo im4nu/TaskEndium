@@ -29,10 +29,8 @@ export function Auth() {
             </Text>
           </Button>
 
-          <Button style={styles.entrar}>
-            <Text style={{color: 'black'}}>
-              Senha
-            </Text>
+          <Button onPress={() => navigation.navigate('Tabs')}>
+            <Text>Login</Text>
           </Button>
         </View>
 
