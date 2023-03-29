@@ -1,6 +1,6 @@
 import { Text, VStack } from 'native-base';
 
-export function Home() {
+export function More() {
   return (
     <VStack flex={1}>
       <Text color={'black'}>Hello World</Text>
