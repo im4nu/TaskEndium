@@ -1,5 +1,5 @@
 import React from "react";
-import { Container,Text} from "native-base";
+import { Container,Text } from "native-base";
 
 interface CardProps{
   title:string;
