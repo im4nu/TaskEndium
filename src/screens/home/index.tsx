@@ -1,7 +1,7 @@
 import { Heading, HStack, ScrollView, Stack, Text, VStack } from 'native-base';
 import { ImageBackground } from 'react-native';
 import { TaskCard } from '../../components/TasksCards';
-import { background } from '../../utils/background';
+import { background } from '../../utils/images';
 
 export function Home() {
   const unicasData = [
@@ -30,8 +30,6 @@ export function Home() {
     { title: 'Comprar Pão', day: 19, month: 'Fev' },
     { title: 'Ligar para Manu', day: 21, month: 'Fev' },
   ];
-
-
 
   return (
     <ImageBackground
@@ -90,24 +88,24 @@ export function Home() {
             {/*Task Blockage*/}
           </VStack>
           <ScrollView
-              horizontal
-              showsHorizontalScrollIndicator={false}
-              contentContainerStyle={{ flexDirection: 'row', paddingStart: 8 }}
-              pt={2}
-            >
-              {habitosData.map((item, index) => (
-                <TaskCard
-                  key={index}
-                  BoxColor="#FFC700"
-                  Day={item.day}
-                  Month={item.month}
-                  Title={item.title}
-                />
-              ))}
-            </ScrollView>
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={{ flexDirection: 'row', paddingStart: 8 }}
+            pt={2}
+          >
+            {habitosData.map((item, index) => (
+              <TaskCard
+                key={index}
+                BoxColor="#FFC700"
+                Day={item.day}
+                Month={item.month}
+                Title={item.title}
+              />
+            ))}
+          </ScrollView>
 
           {/* 'Hábitos' block */}
-          <VStack pl={8} >
+          <VStack pl={8}>
             <Heading fontSize={'3xl'}>Metas</Heading>
             <Text fontWeight={'regular'} fontSize={'sm'} pt={2}>
               Conjunto de atividades feitas para atingir um
@@ -119,22 +117,21 @@ export function Home() {
             {/*Task Blockage*/}
           </VStack>
           <ScrollView
-              horizontal
-              showsHorizontalScrollIndicator={false}
-              contentContainerStyle={{ flexDirection: 'row', paddingStart: 8 }}
-              pt={2}
-            >
-              {habitosData.map((item, index) => (
-                <TaskCard
-                  key={index}
-                  BoxColor="#0087FF"
-                  Day={item.day}
-                  Month={item.month}
-                  Title={item.title}
-                />
-              ))}
-            </ScrollView>  
-
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={{ flexDirection: 'row', paddingStart: 8 }}
+            pt={2}
+          >
+            {habitosData.map((item, index) => (
+              <TaskCard
+                key={index}
+                BoxColor="#0087FF"
+                Day={item.day}
+                Month={item.month}
+                Title={item.title}
+              />
+            ))}
+          </ScrollView>
         </ScrollView>
       </VStack>
     </ImageBackground>
