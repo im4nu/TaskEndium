@@ -38,11 +38,10 @@ export function Home() {
       style={{ flex: 1 }}
     >
       <VStack flex={1} bg={'#22222295'} justifyContent={'space-around'}>
+        <Heading textAlign={'center'} size="2xl">
+          Taskendium
+        </Heading>
         <ScrollView>
-          <Heading textAlign={'center'} size="2xl">
-            Taskendium
-          </Heading>
-
           {/* 'Únicas' block */}
           <VStack>
             <VStack px={8}>

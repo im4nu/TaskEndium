@@ -1,5 +1,5 @@
-import { Text, View, VStack } from 'native-base';
-import { ImageBackground, requireNativeComponent } from 'react-native';
+import { Text, VStack } from 'native-base';
+import { ImageBackground } from 'react-native';
 import { background } from '../../utils/images';
 
 export function Metas() {

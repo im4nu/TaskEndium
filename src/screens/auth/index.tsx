@@ -1,9 +1,8 @@
-import { Text, VStack, Button, View, Flex } from 'native-base';
+import { Text, VStack, View } from 'native-base';
 import { useNavigation } from '@react-navigation/native';
 import { StyleSheet, ImageBackground } from 'react-native';
 import { background } from '../../utils/images';
 import { ButtonGoogle } from './components/ButtonGoogle';
-import { CardExplore } from '../home/components/CardExplore';
 
 export function Auth() {
   const navigation = useNavigation();
@@ -17,13 +16,7 @@ export function Auth() {
           </Text>
         </View>
 
-        <CardExplore
-          titulo="Explore"
-          info="wefwefwef"
-          textbutton="Saiba mais"
-        ></CardExplore>
-
-        <ButtonGoogle></ButtonGoogle>
+        <ButtonGoogle />
       </VStack>
     </ImageBackground>
   );
