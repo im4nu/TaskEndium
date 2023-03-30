@@ -3,7 +3,8 @@ import { useNavigation } from '@react-navigation/native';
 import { StyleSheet, ImageBackground } from 'react-native';
 import { background } from '../../utils/background';
 import { ButtonGoogle } from '../../components/login/ButtonGoogle';
-
+import { CardExplore } from '../../components/home/CardExplore'; 
+ 
 
 
 export function Auth() {
@@ -16,6 +17,8 @@ export function Auth() {
           <Text style = {{fontSize: 40,  paddingTop:82,}}>Bem vindo ao</Text>
           <Text style = {{fontSize: 54,  paddingTop:30, fontWeight: 'bold',}}>Taskendium</Text>
         </View>
+
+        <CardExplore titulo='Explore' info='wefwefwef' textbutton='Saiba mais'></CardExplore>
         
         <ButtonGoogle></ButtonGoogle>
        </VStack>
