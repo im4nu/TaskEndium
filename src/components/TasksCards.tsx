@@ -1,5 +1,4 @@
 import { Flex, Text, View, VStack } from 'native-base';
-import {Text as Text2 } from 'react-native';
 
 interface TaskCardProps {
   Month: string;
@@ -19,7 +18,7 @@ export function TaskCard({ Month, Day, Title, BoxColor }: TaskCardProps) {
         justifyContent={'center'}
       >
         <Flex direction={'row-reverse'}>
-          <Text2 style={{position: 'absolute', paddingTop: 3, paddingRight: 15, fontWeight: 'bold', color: '#222222'}}>{Month}</Text2>
+          <Text position={'absolute'} pt={'3px'} pr={'15px'} bold color={'#222222'}>{Month}</Text>
         </Flex>
 
         <View alignItems={'center'}>
