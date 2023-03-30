@@ -2,6 +2,7 @@ import { Text, VStack, Button, View, Flex} from 'native-base';
 import { useNavigation } from '@react-navigation/native';
 import { StyleSheet, ImageBackground } from 'react-native';
 import { background } from '../../utils/background';
+import { ButtonGoogle } from '../../components/login/ButtonGoogle';
 
 
 
@@ -15,27 +16,8 @@ export function Auth() {
           <Text style = {{fontSize: 40,  paddingTop:82,}}>Bem vindo ao</Text>
           <Text style = {{fontSize: 54,  paddingTop:30, fontWeight: 'bold',}}>Taskendium</Text>
         </View>
-
-        <View style= {{alignItems: 'center', paddingTop: 140}}>  
-          <Button style={styles.button}>
-          <Text style={{color: 'black'}}>
-              Email
-            </Text>
-          </Button>
-
-          <Button style={styles.button}>
-            <Text style={{color: 'black'}}>
-              Senha
-            </Text>
-          </Button>
-
-          <Button style={styles.entrar}>
-            <Text style={{color: 'black'}}>
-              Senha
-            </Text>
-          </Button>
-        </View>
-
+        
+        <ButtonGoogle></ButtonGoogle>
        </VStack>
 
     </ImageBackground>
