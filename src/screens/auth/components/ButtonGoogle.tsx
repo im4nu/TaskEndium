@@ -15,7 +15,7 @@ export function ButtonGoogle() {
         borderRadius={9}
         justifyContent={'center'}
       >
-        <Image source={GoogleIcon} />
+        <Image alt="Logomarca do google" source={GoogleIcon} />
         <Text
           paddingLeft={4}
           fontSize={20}

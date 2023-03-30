@@ -1,11 +1,9 @@
 import { Text, VStack, View } from 'native-base';
-import { useNavigation } from '@react-navigation/native';
 import { StyleSheet, ImageBackground } from 'react-native';
 import { background } from '../../utils/images';
 import { ButtonGoogle } from './components/ButtonGoogle';
 
 export function Auth() {
-  const navigation = useNavigation();
   return (
     <ImageBackground source={background} style={{ flex: 1 }}>
       <VStack style={{ padding: 18 }}>
@@ -27,26 +25,6 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     justifyContent: 'space-between',
     width: '90%',
-  },
-  button: {
-    width: '95%',
-    alignItems: 'center',
-    borderRadius: 4,
-    marginTop: 10,
-    height: 60,
-    backgroundColor: 'white',
-    color: 'black',
-  },
-  entrar: {
-    width: '60%',
-    alignItems: 'center',
-    borderRadius: 4,
-    marginTop: 40,
-    height: 60,
-    backgroundColor: 'white',
-    color: 'black',
-    borderColor: 'black',
-    borderWidth: 7,
   },
 });
 
