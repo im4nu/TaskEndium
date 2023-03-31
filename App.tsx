@@ -5,12 +5,11 @@ import { Routes } from './src/routes';
 export default function App() {
   const theme = extendTheme({
     colors: {
-      primaryDefault: {
-        100: '#523F30',
-        200: '#957A67',
+      main: {
+        100: '#3797EF',
       },
-      primaryLight: {
-        100: '#CFCECC',
+      dark: {
+        100: '#262626',
       },
     },
     config: {
@@ -19,7 +18,7 @@ export default function App() {
   });
   return (
     <NativeBaseProvider theme={theme}>
-      <StatusBar />
+      <StatusBar backgroundColor={'#fff'} barStyle={'dark-content'} />
       <Routes />
     </NativeBaseProvider>
   );
