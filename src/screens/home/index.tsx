@@ -1,7 +1,8 @@
-import { Heading, HStack, ScrollView, Stack, Text, VStack } from 'native-base';
+import { Heading, HStack, ScrollView, Stack, Text, View, VStack } from 'native-base';
 import { ImageBackground } from 'react-native';
 import { TaskCard } from '../../components/TasksCards';
 import { background } from '../../utils/images';
+import { CardExplore } from './components/CardExplore';
 
 export function Home() {
   const unicasData = [
@@ -43,6 +44,14 @@ export function Home() {
         </Heading>
         <ScrollView>
           {/* 'Únicas' block */}
+          <View marginX={6}>
+            <CardExplore 
+            titulo='Explore' 
+            info='Descubra, crie, inove e compartilhe suas conquistas no nosso feed!'
+            textbutton='Saiba mais'
+            >
+            </CardExplore>
+          </View>
           <VStack>
             <VStack px={8}>
               <Heading fontSize={'3xl'}>Únicas</Heading>

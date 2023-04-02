@@ -7,47 +7,25 @@ import { ButtonGoogle } from './components/ButtonGoogle';
 export function Auth() {
   const navigation = useNavigation();
   return (
-    <ImageBackground source={background} style={{ flex: 1 }}>
-      <VStack style={{ padding: 18 }}>
-        <View style={styles.textLogin}>
-          <Text style={{ fontSize: 40, paddingTop: 82 }}>Bem vindo ao</Text>
-          <Text style={{ fontSize: 54, paddingTop: 30, fontWeight: 'bold' }}>
+    <ImageBackground source={background} alt={"image background"}  style={{ flex: 1 }}>
+      <VStack flex={1} bg={'#22222295'}>
+
+      <VStack padding= {18} >
+        <View alignItems= {'flex-start'} justifyContent= {'space-between'} width= {'90%'}>
+          <Text  fontSize= {40} paddingTop= {82}>Bem vindo ao</Text>
+          <Text fontSize= {54} paddingTop= {1} fontWeight= {'bold'}>
             Taskendium
           </Text>
         </View>
 
-        <ButtonGoogle />
+        <View alignItems={'center'} paddingTop={150}>
+          <ButtonGoogle />
+        </View>
+
+      </VStack>
       </VStack>
     </ImageBackground>
   );
 }
-
-const styles = StyleSheet.create({
-  textLogin: {
-    alignItems: 'flex-start',
-    justifyContent: 'space-between',
-    width: '90%',
-  },
-  button: {
-    width: '95%',
-    alignItems: 'center',
-    borderRadius: 4,
-    marginTop: 10,
-    height: 60,
-    backgroundColor: 'white',
-    color: 'black',
-  },
-  entrar: {
-    width: '60%',
-    alignItems: 'center',
-    borderRadius: 4,
-    marginTop: 40,
-    height: 60,
-    backgroundColor: 'white',
-    color: 'black',
-    borderColor: 'black',
-    borderWidth: 7,
-  },
-});
 
 export default Auth;
