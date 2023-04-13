@@ -8,6 +8,7 @@ import { Habitos } from '../screens/habitos';
 import { Metas } from '../screens/metas';
 import { Home } from '../screens/home';
 import { Settings } from '../screens/settings';
+import FloatHome from '../screens/home/FloatHome';
 
 export function TabRoutes() {
   //to optimize my code and dont have to make screen.anything
@@ -21,7 +22,8 @@ export function TabRoutes() {
         tabBarActiveBackgroundColor: '#181818',
         tabBarStyle: { height: 65 }
       }}>
-      <Screen
+
+    <Screen
         options={{
           tabBarIcon: ({ size, color }) => (
             <Feather name="home" color={color} size={size} />

@@ -3,6 +3,7 @@ import { ImageBackground } from 'react-native';
 import { TaskCard } from '../../components/TasksCards';
 import { background } from '../../utils/images';
 import { CardExplore } from './components/CardExplore';
+import { ButtonFloat } from './components/ButtonFloat';
 
 export function Home() {
   const unicasData = [
@@ -46,9 +47,9 @@ export function Home() {
           {/* 'Únicas' block */}
           <View marginX={6}>
             <CardExplore 
-            titulo='Explore' 
-            info='Descubra, crie, inove e compartilhe suas conquistas no nosso feed!'
-            textbutton='Saiba mais'
+              titulo='Explore' 
+              info='Descubra, crie, inove e compartilhe suas conquistas no nosso feed!'
+              textbutton='Saiba mais'
             >
             </CardExplore>
           </View>

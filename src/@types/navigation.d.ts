@@ -9,6 +9,7 @@ export declare global{
             Unicas: undefined,
             Habitos: undefined,
             Metas: undefined,
+            Floathome: undefined,
         }
     }
 }

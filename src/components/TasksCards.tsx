@@ -9,6 +9,7 @@ interface TaskCardProps {
 
 export function TaskCard({ Month, Day, Title, BoxColor }: TaskCardProps) {
   return (
+    <View>
     <VStack px={2}>
       <VStack
         rounded={'2xl'}
@@ -35,5 +36,6 @@ export function TaskCard({ Month, Day, Title, BoxColor }: TaskCardProps) {
       maxW={'100'}
       paddingTop={'1'}>{Title}</Text>
     </VStack>
+    </View>
   );
 }

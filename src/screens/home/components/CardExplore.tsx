@@ -1,14 +1,18 @@
-import { View, HStack, VStack, Text, Image } from 'native-base';
+import { View, HStack, VStack, Text, Image,} from 'native-base';
+import { TouchableOpacity } from 'react-native';
 import image from "../../../assets/images/img.png"
+import { useNavigation } from '@react-navigation/native';
 
-interface ExploreProps {
+interface CardProps {
   titulo: string;
   info: string;
   textbutton: string;
 }
 
-export function CardExplore({titulo, info, textbutton }: ExploreProps) {
+export function CardExplore({titulo, info, textbutton }: CardProps) {
+  const navigation = useNavigation();
   return (
+    <TouchableOpacity onPress={() => navigation.navigate('Floathome')}>
     <View width={'100%'}>
       <HStack background={'#D2D2D2'} 
       borderRadius={12} 
@@ -37,5 +41,6 @@ export function CardExplore({titulo, info, textbutton }: ExploreProps) {
         </VStack>
       </HStack>
     </View>
+    </TouchableOpacity>
   );
 }

@@ -1,13 +1,11 @@
 import { Text, VStack, View } from 'native-base';
 import { useNavigation } from '@react-navigation/native';
 import { ImageBackground } from 'react-native';
-import { background } from '../../utils/images';
-import { ButtonGoogle } from './components/ButtonGoogle';
 
-export function Auth() {
+export function FloatHome() {
   const navigation = useNavigation();
   return (
-    <ImageBackground source={background} alt={"image background"}  style={{ flex: 1 }}>
+    <View style={{ flex: 1 }}>
       <VStack flex={1} bg={'#22222295'}>
 
       <VStack padding= {18} >
@@ -19,13 +17,12 @@ export function Auth() {
         </View>
 
         <View alignItems={'center'} paddingTop={150}>
-          <ButtonGoogle />
         </View>
 
       </VStack>
       </VStack>
-    </ImageBackground>
+    </View>
   );
 }
 
-export default Auth;
+export default FloatHome;
